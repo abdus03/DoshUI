@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>TestNG:  My_Application</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>My_Application</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Oct 24 00:15:55 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>277 seconds (277150 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myfw.runner.ExtentReportRunner.runScenario()'><b>runScenario</b><br>Test class: com.myfw.runner.ExtentReportRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Dosh Financial Sign up", "Dosh Financial Sign up"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.split(String)&quot; because &quot;emailText&quot; is null
+	at com.myfw.Utility.EmailUtils.getOtp(EmailUtils.java:75)
+	at stepDefinition.SignUpPageSteps.userShouldAbleToEnterOTP(SignUpPageSteps.java:179)
+	at ✽.user should able to enter OTP(file:///D:/Automation%20data/DOSHTestAutomation/src/test/resources/AppFeatures/02DoshSignUpFinance.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace865396145", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace865396145'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.split(String)&quot; because &quot;emailText&quot; is null
+	at com.myfw.Utility.EmailUtils.getOtp(EmailUtils.java:75)
+	at stepDefinition.SignUpPageSteps.userShouldAbleToEnterOTP(SignUpPageSteps.java:179)
+	at ✽.user should able to enter OTP(file:///D:/Automation%20data/DOSHTestAutomation/src/test/resources/AppFeatures/02DoshSignUpFinance.feature:23)
+</pre></div></td>
+<td>140</td>
+<td>com.myfw.runner.ExtentReportRunner@313ac989</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.myfw.runner.ExtentReportRunner.runScenario()'><b>runScenario</b><br>Test class: com.myfw.runner.ExtentReportRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Dosh Insurance Sign up", "Dosh Insurance Sign up"</td>
+<td></td>
+<td>130</td>
+<td>com.myfw.runner.ExtentReportRunner@313ac989</td></tr>
+</table><p>
+</body>
+</html>

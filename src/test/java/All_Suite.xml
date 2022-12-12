@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MySuite" parallel="tests" thread-count="1" verbose="1">
+
+
+    <test name="My_Application">
+        <classes>
+            <class name="com.myfw.runner.ExtentReportRunner"/>
+        </classes>
+    </test>
+
+</suite>

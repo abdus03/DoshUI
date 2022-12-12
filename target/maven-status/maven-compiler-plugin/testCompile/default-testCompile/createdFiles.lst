@@ -1,0 +1,9 @@
+Apphooks\AppHooks.class
+com\myfw\library\CommonLibrary.class
+stepDefinition\LoginpageSteps.class
+com\myfw\UIconstants\SignupPageLocators.class
+com\myfw\runner\ExtentReportRunner.class
+com\myfw\UIconstants\LoginPageLocators.class
+com\myfw\Utility\GetAndSetdatafromExcel.class
+stepDefinition\SignUpPageSteps.class
+com\myfw\Utility\EmailUtils.class

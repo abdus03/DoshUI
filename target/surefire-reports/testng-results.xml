@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-24T00:20:32 IST" name="AllTest" finished-at="2022-10-24T00:20:32 IST" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- AllTest -->
+  <suite started-at="2022-10-24T00:15:55 IST" name="MySuite" finished-at="2022-10-24T00:20:32 IST" duration-ms="277150">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.myfw.runner.ExtentReportRunner@313ac989]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-10-24T00:15:55 IST" name="My_Application" finished-at="2022-10-24T00:20:32 IST" duration-ms="277150">
+      <class name="com.myfw.runner.ExtentReportRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.myfw.runner.ExtentReportRunner@313ac989]" started-at="2022-10-24T00:15:55 IST" name="setUpClass" finished-at="2022-10-24T00:15:56 IST" duration-ms="983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4c12331b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.myfw.runner.ExtentReportRunner@313ac989]" started-at="2022-10-24T00:15:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T00:18:06 IST" duration-ms="130160" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Dosh Insurance Sign up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dosh Insurance Sign up"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.myfw.runner.ExtentReportRunner@313ac989]" started-at="2022-10-24T00:18:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-10-24T00:20:26 IST" duration-ms="140002" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Dosh Financial Sign up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Dosh Financial Sign up"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.split(String)" because "emailText" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.split(String)" because "emailText" is null
+at com.myfw.Utility.EmailUtils.getOtp(EmailUtils.java:75)
+at stepDefinition.SignUpPageSteps.userShouldAbleToEnterOTP(SignUpPageSteps.java:179)
+at ✽.user should able to enter OTP(file:///D:/Automation%20data/DOSHTestAutomation/src/test/resources/AppFeatures/02DoshSignUpFinance.feature:23)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.myfw.runner.ExtentReportRunner@313ac989]" started-at="2022-10-24T00:20:26 IST" name="tearDownClass" finished-at="2022-10-24T00:20:32 IST" duration-ms="5945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.myfw.runner.ExtentReportRunner -->
+    </test> <!-- My_Application -->
+  </suite> <!-- MySuite -->
+</testng-results>
